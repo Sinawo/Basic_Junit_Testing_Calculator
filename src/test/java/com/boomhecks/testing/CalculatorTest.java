@@ -44,8 +44,4 @@ public class CalculatorTest {
         assertThrows(IllegalArgumentException.class, () -> calculator.divide(1, 0));
     }
 
-
-
-
-
 }
