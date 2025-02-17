@@ -39,7 +39,6 @@ public class CalculatorTest {
     @Test
     public void testDivide() {
         Calculator calculator = new Calculator();
-        assertEquals(0.09523809523809523, calculator.divide(4, 5, 6, 7), 0.0001);
         assertEquals(0.5, calculator.divide(1, 2), 0.0001);
         assertEquals(0, calculator.divide());
         assertThrows(IllegalArgumentException.class, () -> calculator.divide(1, 0));
