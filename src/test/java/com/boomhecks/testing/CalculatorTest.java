@@ -14,6 +14,7 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         assertEquals(22, calculator.add(4, 5, 6, 7));
         assertEquals(3, calculator.add(1, 2));
+        
         assertEquals(0, calculator.add());
     }
 
@@ -39,6 +40,7 @@ public class CalculatorTest {
     @Test
     public void testDivide() {
         Calculator calculator = new Calculator();
+
         assertEquals(0.5, calculator.divide(1, 2), 0.0001);
         assertEquals(0, calculator.divide());
         assertThrows(IllegalArgumentException.class, () -> calculator.divide(1, 0));

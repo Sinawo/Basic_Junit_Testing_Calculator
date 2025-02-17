@@ -26,7 +26,7 @@ public class Calculator {
         if (numbers.length == 0) return 0;
         int result = 1;
         for (int number : numbers) {
-            result *= number;
+            result = result * number;
         }
         return result;
     }
